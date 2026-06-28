@@ -1,10 +1,17 @@
-class Vehicle:
+class Parrot:
 
-    def __init__(self, max_speed, mileage):
-        self.max_speed = max_speed
-        self.mileage = mileage
+    species = "bird"
 
-modeIX = Vehicle(240, 10)
-print("Model Max Speed,", modeIX.max_speed)
-print("Model Mileage", modeIX.mileage)
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+Blu = Parrot("Blu", 10)
+woo = Parrot("Woo", 15)
+
+print("Clu is a {}".format(Blu.species))
+print("Woo is a {}".format(woo.species))
+
+print("{} is {}".format(Blu.name, Blu.age))
+print("{} is {}".format(woo.name, woo.age))
         
